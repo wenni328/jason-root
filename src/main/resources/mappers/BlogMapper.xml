@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jason.mapper.BlogMapper">
+	<resultMap id="BlogResultMap" type="com.jason.entity.Blog">
+		<id property="id" column="id" javaType="java.lang.Integer"
+			jdbcType="INTEGER" />
+		<result property="title" column="title" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="authorId" column="authorId"
+			javaType="java.lang.Integer" jdbcType="INTEGER" />
+		<result property="content" column="content" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="html" column="html" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="mark" column="mark" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="sorts" column="sorts" javaType="String"
+			jdbcType="VARCHAR" />
+		<result property="createTime" column="createTime"
+			javaType="java.util.Date" jdbcType="DATE" />
+		<result property="picture" column="picture" javaType="String"
+			jdbcType="VARCHAR" />
+	</resultMap>
+
+
+
+	<select id="list" resultMap="BlogResultMap">
+		select * from Blog
+	</select>
+
+<select id="getBlogById" resultType="Blog" parameterType="Integer">
+   select * from Blog where id=#{id}
+</select>
+</mapper>
