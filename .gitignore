@@ -28,3 +28,6 @@ mvnw
 /dist/
 /nbdist/
 /.nb-gradle/
+.mvn/
+src/main/resources/static/
+src/main/resources/templates/
