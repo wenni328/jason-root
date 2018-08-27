@@ -15,10 +15,19 @@
 *.iws
 *.iml
 *.ipr
+<<<<<<< HEAD
 *.log
 logs
 mvnw
 mvnw.cmd
+=======
+target
+*.log
+logs
+mvnw.cmd
+mvnw
+
+>>>>>>> b1e55ecff304a4c813868ef08224edec10d79301
 ### NetBeans ###
 /nbproject/private/
 /build/
@@ -26,3 +35,6 @@ mvnw.cmd
 /dist/
 /nbdist/
 /.nb-gradle/
+.mvn/
+src/main/resources/static/
+src/main/resources/templates/
