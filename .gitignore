@@ -15,19 +15,14 @@
 *.iws
 *.iml
 *.ipr
-<<<<<<< HEAD
-*.log
-logs
-mvnw
-mvnw.cmd
-=======
-target
-*.log
-logs
-mvnw.cmd
-mvnw
 
->>>>>>> b1e55ecff304a4c813868ef08224edec10d79301
+*.log
+logs
+mvnw
+mvnw.cmd
+target
+
+
 ### NetBeans ###
 /nbproject/private/
 /build/
